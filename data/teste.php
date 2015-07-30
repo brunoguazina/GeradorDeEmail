@@ -2,6 +2,9 @@
  // extrai os dados do post
  extract($_POST);
  // imprime os dados do post
+
+$obj = array('titulo' => $titulo, 'descricao' => $descricao, 'link' => $link);
+
  sleep(2);
- echo "$titulo - $descricao - $link";
+ echo json_encode($obj, JSON_FORCE_OBJECT);
 ?>
