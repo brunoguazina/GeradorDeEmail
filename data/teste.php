@@ -6,5 +6,5 @@
 $obj = array('titulo' => $titulo, 'descricao' => $descricao, 'link' => $link);
 
  sleep(2);
- echo json_encode($obj, JSON_FORCE_OBJECT);
+ echo json_encode($obj);
 ?>
